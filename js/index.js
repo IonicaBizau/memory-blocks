@@ -7,8 +7,8 @@
           , y: 4
         }
       , step: {
-            x: 100
-          , y: 100
+            x: 120
+          , y: 120
         }
     }, [
         {
@@ -114,27 +114,19 @@
     });
 
     game.on("activate", function (elm) {
-
-        elm.children[1].classList.remove("flipInY");
-        elm.children[0].classList.remove("flipOutY");
-
-        elm.children[0].classList.add("flipInY", "animated");
-        elm.children[1].classList.add("rotateOut", "animated");
+      elm.classList.remove("unspin");
+      elm.classList.add("spin");
     });
 
     game.on("deactivate", function (elm) {
-
-        elm.children[0].classList.remove("flipInY");
-        elm.children[1].classList.remove("rotateOut");
-
-        elm.children[1].classList.add("flipInY", "animated");
-        elm.children[0].classList.add("flipOutY", "animated");
+      elm.classList.add("unspin");
+      elm.classList.remove("spin");
     });
 
     game.on("success", function (elm1, elm2) {
         setTimeout(function() {
-            elm1.classList.add("zoomOut", "animated");
-            elm2.classList.add("zoomOut", "animated");
+            elm1.classList.add("spinned-zoom-out");
+            elm2.classList.add("spinned-zoom-out");
             setTimeout(function() {
                 elm1.remove();
                 elm2.remove();
