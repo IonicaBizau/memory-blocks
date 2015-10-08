@@ -16,7 +16,7 @@ main {
 
 .game > div {
     width: 85px;
-    height: 85px;
+    height: 70px;
     position: absolute;
     display: inline-block;
     text-align: center;
@@ -67,17 +67,17 @@ img {
       -ms-transform: rotateY(10deg);
        -o-transform: rotateY(10deg);
           transform: rotateY(10deg);
-  -webkit-transition: all .9s ease;
-     -moz-transition: all .9s ease;
-      -ms-transition: all .9s ease;
-       -o-transition: all .9s ease;
-          transition: all .9s ease;
+  -webkit-transition: all .4s ease;
+     -moz-transition: all .4s ease;
+      -ms-transition: all .4s ease;
+       -o-transition: all .4s ease;
+          transition: all .4s ease;
   -webkit-transform-origin: 35px;
      -moz-transform-origin: 35px;
       -ms-transform-origin: 35px;
        -o-transform-origin: 35px;
           transform-origin: 35px;
-}   
+}
 
 .cube div {
   position: absolute;
@@ -132,7 +132,7 @@ img {
     -ms-transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
     -o-transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
     transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
-    transform-origin: bottom center;  
+    transform-origin: bottom center;
 }
 
 .back {
@@ -149,15 +149,15 @@ img {
 }
 
 .spin {
-  -webkit-animation: spin .9s forwards;
-     -moz-animation: spin .9s forwards;
-       -o-animation: spin .9s forwards;
-          animation: spin .9s forwards;
+  -webkit-animation: spin .4s forwards;
+     -moz-animation: spin .4s forwards;
+       -o-animation: spin .4s forwards;
+          animation: spin .4s forwards;
 }
 
 @keyframes spinned-zoom-out {
   from { transform: rotateY(-170deg) scale3d(1, 1, 1); }
-  to { transform: rotateY(-170deg) scale3d(.3, .3, .3); }
+  to { transform: rotateY(-170deg) scale3d(.001, .001, .001); }
 }
 
 .spinned-zoom-out {
@@ -178,8 +178,8 @@ img {
 }
 
 .unspin {
-  -webkit-animation: unspin .9s forwards;
-     -moz-animation: unspin .9s forwards;
-       -o-animation: unspin .9s forwards;
-          animation: unspin .9s forwards;
+  -webkit-animation: unspin .4s forwards;
+     -moz-animation: unspin .4s forwards;
+       -o-animation: unspin .4s forwards;
+          animation: unspin .4s forwards;
 }
