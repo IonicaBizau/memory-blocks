@@ -8,7 +8,7 @@
         }
       , step: {
             x: 125
-          , y: 125
+          , y: 115
         }
     }, [
         {
@@ -130,7 +130,7 @@
             setTimeout(function() {
                 elm1.remove();
                 elm2.remove();
-            }, 500);
+            }, 900);
         }, 1000);
     });
 
