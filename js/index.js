@@ -136,15 +136,7 @@
 
     var timeEl = document.getElementsByClassName("time")[0];
     game.on("time", function (time) {
-        var sec = time / 1000
-          , min = Math.floor(sec / 60)
-          ;
-
-        sec = Math.floor(sec - min * 60);
-        sec = (sec < 10 ? "0" : "") + sec;
-        min = (min < 10 ? "0" : "") + min;
-
-        timeEl.innerHTML = min + ":" + sec;
+        timeEl.innerHTML = Math.floor(time / 1000);
     });
 
     var pairsCountEl = document.getElementsByClassName("pairs-count")[0];
