@@ -1,0 +1,37 @@
+{
+  "name": "blocks-game",
+  "version": "1.0.0",
+  "description": "The old BLOCKS memory game ported to modern web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IonicaBizau/blocks.git"
+  },
+  "keywords": [
+    "old",
+    "game",
+    "blocks",
+    "html",
+    "web",
+    "modern"
+  ],
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "contributors": [
+    "Antonija Šimić <antonija1023@gmail.com> (http://tonkec.github.io)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/blocks/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/blocks#readme",
+  "blah": {
+    "thanks": {
+      "ul": [
+        "Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:"
+      ]
+    }
+  }
+}
