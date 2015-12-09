@@ -119,11 +119,11 @@ img {
 }
 
 .left {
-  -webkit-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
-     -moz-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
-      -ms-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
-       -o-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
-          transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
+  -webkit-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+     -moz-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+      -ms-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+       -o-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+          transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
   transform-origin: center left;
 }
 
