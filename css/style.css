@@ -34,10 +34,11 @@ main {
 }
 
 .game > div .back {
-    width: 100%;
+    width: calc(100% + 1px);
     height: 100%;
     background-color: #FFFF00;
     position: absolute;
+    left: -0.6px;
 }
 img {
     height: 100%;
@@ -83,7 +84,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgb(99, 99, 99);
 }
 
 .left, .right, .bottom, .top {
@@ -99,40 +100,40 @@ img {
 }
 
 .top {
-    -webkit-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(33px) translateZ(16px);
-       -moz-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(33px) translateZ(16px);
-        -ms-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(33px) translateZ(16px);
-         -o-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(33px) translateZ(16px);
-            transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(33px) translateZ(16px);
+    -webkit-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+       -moz-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+        -ms-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+         -o-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+             transform: rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
     height: 30px !important;
     background: #ffff00;
 }
 
 .right {
-   -webkit-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(4deg);
-      -moz-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(4deg);
-       -ms-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(4deg);
-        -o-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(4deg);
-           transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(4deg);
-  transform-origin: top right;
+   -webkit-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+      -moz-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+       -ms-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+        -o-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+           transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+   transform-origin: top right;
 }
 
 .left {
-  -webkit-transform: rotateY(270deg) translateX(-53px) scale(.4, 1) skewY(-4deg);
-     -moz-transform: rotateY(270deg) translateX(-53px) scale(.4, 1) skewY(-4deg);
-      -ms-transform: rotateY(270deg) translateX(-53px) scale(.4, 1) skewY(-4deg);
-       -o-transform: rotateY(270deg) translateX(-53px) scale(.4, 1) skewY(-4deg);
-          transform: rotateY(270deg) translateX(-53px) scale(.4, 1) skewY(-4deg);
+  -webkit-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
+     -moz-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
+      -ms-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
+       -o-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
+          transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.4, 1) skewY(-4deg);
   transform-origin: center left;
 }
 
 .bottom {
-  webkit-transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
-    -moz-transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
-    -ms-transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
-    -o-transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
-    transform: rotateX(105deg) translateY(-15px) translateZ(12px) scale(1, .4);
-    transform-origin: bottom center;
+  -webkit-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+     -moz-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+      -ms-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+       -o-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+          transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+  transform-origin: bottom center;
 }
 
 .back {
