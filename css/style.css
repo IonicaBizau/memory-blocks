@@ -1,17 +1,20 @@
 body, html {
-    background-color: #0FF;
     height: 100%;
     padding: 0;
     margin: 0;
     width: 100%;
     overflow: hidden;
+    background-color: #2c3e50;
 }
 
 main {
-  width: 100%;
-  height: 100%;
-  background: red;
-  position: relative;
+    position: absolute;
+    width: 784px;
+    left: 50%;
+    margin-left: -397px;
+    top: 90px;
+    height: 650px;
+    box-shadow: 0 15px 85px rgba(0, 0, 0, 0.19);
 }
 
 .game > div {
@@ -26,6 +29,8 @@ main {
 .game {
     text-align: center;
     position: absolute;
+    left: 40px;
+    top: 30px;
 }
 .game > div .front {
     position: absolute;
@@ -50,41 +55,41 @@ img {
 }
 
 .wrap {
-  -webkit-perspective: 10000px;
-     -moz-perspective: 10000px;
-          perspective: 10000px;
-  -webkit-perspective-origin: 50% 100px;
-     -moz-perspective-origin: 50% 100px;
-          perspective-origin: 50% 100px;
+    -webkit-perspective: 10000px;
+    -moz-perspective: 10000px;
+    perspective: 10000px;
+    -webkit-perspective-origin: 50% 100px;
+    -moz-perspective-origin: 50% 100px;
+    perspective-origin: 50% 100px;
 }
 
 .cube {
-  position: relative;
-  width: 80px;
-  height: 60px;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateY(10deg);
-     -moz-transform: rotateY(10deg);
-      -ms-transform: rotateY(10deg);
-       -o-transform: rotateY(10deg);
-          transform: rotateY(10deg);
-  -webkit-transition: all .4s ease;
-     -moz-transition: all .4s ease;
-      -ms-transition: all .4s ease;
-       -o-transition: all .4s ease;
-          transition: all .4s ease;
-  -webkit-transform-origin: 35px;
-     -moz-transform-origin: 35px;
-      -ms-transform-origin: 35px;
-       -o-transform-origin: 35px;
-          transform-origin: 35px;
+    position: relative;
+    width: 80px;
+    height: 60px;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(10deg);
+    -moz-transform: rotateY(10deg);
+    -ms-transform: rotateY(10deg);
+    -o-transform: rotateY(10deg);
+    transform: rotateY(10deg);
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    -webkit-transform-origin: 35px;
+    -moz-transform-origin: 35px;
+    -ms-transform-origin: 35px;
+    -o-transform-origin: 35px;
+    transform-origin: 35px;
 }
 
 .cube div {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgb(99, 99, 99);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(99, 99, 99);
 }
 
 .left, .right, .bottom, .top {
@@ -92,95 +97,143 @@ img {
 }
 
 .front {
-   -webkit-transform: translateZ(-55px) rotateY(180deg);
-      -moz-transform: translateZ(-55px) rotateY(180deg);
-       -ms-transform: translateZ(-55px) rotateY(180deg);
-        -o-transform: translateZ(-55px) rotateY(180deg);
-           transform: translateZ(-55px) rotateY(180deg);
+    -webkit-transform: translateZ(-55px) rotateY(180deg);
+    -moz-transform: translateZ(-55px) rotateY(180deg);
+    -ms-transform: translateZ(-55px) rotateY(180deg);
+    -o-transform: translateZ(-55px) rotateY(180deg);
+    transform: translateZ(-55px) rotateY(180deg);
 }
 
 .top {
     -webkit-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
-       -moz-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
-        -ms-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
-         -o-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
-             transform: rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+    -moz-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+    -ms-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+    -o-transform:  rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
+    transform: rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
     height: 30px !important;
     background: #ffff00;
 }
 
 .right {
-   -webkit-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
-      -moz-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
-       -ms-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
-        -o-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
-           transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
-   transform-origin: top right;
+    -webkit-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+    -moz-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+    -ms-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+    -o-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+    transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
+    transform-origin: top right;
 }
 
 .left {
-  -webkit-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-     -moz-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-      -ms-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-       -o-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-          transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-  transform-origin: center left;
+    -webkit-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    -moz-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    -ms-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    -o-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    transform-origin: center left;
 }
 
 .bottom {
-  -webkit-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
-     -moz-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
-      -ms-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
-       -o-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
-          transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
-  transform-origin: bottom center;
+    -webkit-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+    -moz-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+    -ms-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+    -o-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+    transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
+    transform-origin: bottom center;
 }
 
 .back {
-  -webkit-transform: translateZ(-18px) translateY(-5px);
-     -moz-transform: translateZ(-18px) translateY(-5px);
-      -ms-transform: translateZ(-18px) translateY(-5px);
-       -o-transform: translateZ(-18px) translateY(-5px);
-          transform: translateZ(-18px) translateY(-5px);
+    -webkit-transform: translateZ(-18px) translateY(-5px);
+    -moz-transform: translateZ(-18px) translateY(-5px);
+    -ms-transform: translateZ(-18px) translateY(-5px);
+    -o-transform: translateZ(-18px) translateY(-5px);
+    transform: translateZ(-18px) translateY(-5px);
 }
 
 @keyframes spin {
-  from { transform: rotateY(0); }
-  to { transform: rotateY(-170deg); }
+    from { transform: rotateY(0); }
+    to { transform: rotateY(-170deg); }
 }
 
 .spin {
-  -webkit-animation: spin .4s forwards;
-     -moz-animation: spin .4s forwards;
-       -o-animation: spin .4s forwards;
-          animation: spin .4s forwards;
+    -webkit-animation: spin .4s forwards;
+    -moz-animation: spin .4s forwards;
+    -o-animation: spin .4s forwards;
+    animation: spin .4s forwards;
 }
 
 @keyframes spinned-zoom-out {
-  from { transform: rotateY(-170deg) scale3d(1, 1, 1); }
-  to { transform: rotateY(-170deg) scale3d(.001, .001, .001); }
+    from { transform: rotateY(-170deg) scale3d(1, 1, 1); }
+    to { transform: rotateY(-170deg) scale3d(.001, .001, .001); }
 }
 
 .spinned-zoom-out {
     -webkit-animation: spinned-zoom-out .5s ease forwards;
-       -moz-animation: spinned-zoom-out .5s ease forwards;
-         -o-animation: spinned-zoom-out .5s ease forwards;
-            animation: spinned-zoom-out .5s ease forwards;
+    -moz-animation: spinned-zoom-out .5s ease forwards;
+    -o-animation: spinned-zoom-out .5s ease forwards;
+    animation: spinned-zoom-out .5s ease forwards;
 }
 
 @keyframes unspin {
-  from { transform: rotateY(-170deg); }
-  to { transform: rotateY(10deg); }
+    from { transform: rotateY(-170deg); }
+    to { transform: rotateY(10deg); }
 }
 
 @-webkit-keyframes unspin {
     from { transform: rotateY(-170deg); }
-  to { transform: rotateY(10deg); }
+    to { transform: rotateY(10deg); }
 }
 
 .unspin {
-  -webkit-animation: unspin .4s forwards;
-     -moz-animation: unspin .4s forwards;
-       -o-animation: unspin .4s forwards;
-          animation: unspin .4s forwards;
+    -webkit-animation: unspin .4s forwards;
+    -moz-animation: unspin .4s forwards;
+    -o-animation: unspin .4s forwards;
+    animation: unspin .4s forwards;
+}
+
+.background {
+    position: absolute;
+    width: 780px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+.background.background-easy {
+    background-color: #0FF;
+}
+
+
+h1 { margin-top: 20px; }
+a:hover { color: inherit !important; }
+.description { margin-top: 0; }
+.hide { display: none; }
+small {
+    color: rgb(183, 183, 183);
+    font-size: 13px;
+    margin-left: 12px;
+}
+
+h1 { margin-top: 20px; }
+a:hover { color: inherit !important; }
+.description { margin-top: 0; }
+.hide { display: none; }
+small {
+    color: #444;
+    font-size: 13px;
+    margin-left: 12px;
+    font-weight: bold;
+}
+
+.game-info {
+    font-family: monospace;
+    position: absolute;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: white;
+    width: 750px;
+    top: 602px;
+    text-align: right;
+}
+
+span.time {
+    margin-right: 40px;
 }

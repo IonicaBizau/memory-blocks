@@ -3,8 +3,8 @@
         templateElm: ".templates > div"
       , autoremove: false
       , size: {
-            x: 9
-          , y: 4
+            x: 6
+          , y: 5
         }
       , step: {
             x: 125
