@@ -1,3 +1,10 @@
+body.grayscale {
+    -webkit-filter: grayscale(1);
+       -moz-filter: grayscale(1);
+            filter: grayscale(1);
+}
+
+
 body, html {
     height: 100%;
     padding: 0;
@@ -369,4 +376,13 @@ button.retro-border {
 
 .congrats form .ok-btn {
     width: 50px;
+}
+.game-controls {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+.highscores {
+    display: none;
 }
