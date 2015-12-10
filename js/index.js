@@ -136,13 +136,21 @@
         setTimeout(function () {
             var time = game.passedTime
               , pairs = game.flippedPairs
+              , gameEl = document.querySelector(".game-info")
               ;
+
+            gameEl.classList.add("bg-win");
+            setInterval(function () {
+                gameEl.classList.toggle("bg-win-purple");
+            }, 500);
 
             var enterNameEl = document.querySelector(".enter-name");
             var congratsEl = document.querySelector(".congrats");
             if (Highscores.check(pairs, time)) {
                 enterNameEl.classList.remove("hide");
-                document.querySelector("form input").focus();
+                setTimeout(function() {
+                    document.querySelector("form input").focus();
+                }, 10);
             } else {
                 enterNameEl.classList.add("hide");
             }
