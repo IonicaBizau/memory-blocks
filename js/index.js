@@ -3,8 +3,8 @@
         templateElm: ".templates > div"
       , autoremove: false
       , size: {
-            x: 1
-          , y: 2
+            x: 6
+          , y: 5
         }
       , step: {
             x: 125
@@ -106,14 +106,48 @@
         }
     ]);
 
+    function showHighscores() {
+        var hScores = Highscores.get();
+
+        function forTable(selector, scores) {
+            var elms = document.querySelectorAll(selector + " table tbody tr");
+            for (var i = 0; i < elms.length; ++i) {
+                var cRow = elms[i];
+                var tds = cRow.querySelectorAll("td");
+                scores[i] = scores[i] || { name: "", time: "", pairs: "", timestamp: "" };
+                tds[1].textContent = scores[i].name;
+                tds[2].textContent = scores[i].time;
+                tds[4].textContent = scores[i].pairs;
+                cRow.setAttribute("data-timestamp", scores[i].timestamp.toString());
+                cRow.classList.remove("selected");
+            }
+        }
+
+        forTable(".fastest-times", hScores.fastestTimes);
+        forTable(".fewest-pairs", hScores.fewestPairs);
+        document.querySelector(".highscores").style.display = "block";
+    }
+
     document.querySelector(".highscores .ok-btn").addEventListener("click", function () {
         document.querySelector(".highscores").style.display = "none";
     });
 
     game.on("win", function () {
         setTimeout(function () {
-            window.location = "https://github.com/IonicaBizau/match.js";
-        }, 1000);
+            var time = game.passedTime
+              , pairs = game.flippedPairs
+              ;
+
+            var enterNameEl = document.querySelector(".enter-name");
+            var congratsEl = document.querySelector(".congrats");
+            if (Highscores.check(pairs, time)) {
+                enterNameEl.classList.remove("hide");
+                document.querySelector("form input").focus();
+            } else {
+                enterNameEl.classList.add("hide");
+            }
+            congratsEl.classList.remove("hide");
+        }, 1500);
     });
 
     game.on("activate", function (elm) {
@@ -139,7 +173,7 @@
 
     var timeEl = document.getElementsByClassName("time")[0];
     game.on("time", function (time) {
-        timeEl.innerHTML = Math.floor(time / 1000);
+        game.passedTime = timeEl.innerHTML = Math.floor(time / 1000);
     });
 
     var pairsCountEl = document.getElementsByClassName("pairs-count")[0];
@@ -160,7 +194,34 @@
 
     // Show highscores
     document.querySelector(".show-highscores").addEventListener("click", function () {
-        document.querySelector(".highscores").style.display = "block";
+        showHighscores();
+    });
+
+    // Reset highscores
+    document.querySelector(".reset-btn").addEventListener("click", function () {
+        Highscores.reset();
+        showHighscores();
+    });
+
+    // View on GitHub
+    document.querySelector(".view-on-github").addEventListener("click", function () {
+        location = "https://github.com/IonicaBizau/blocks";
+    });
+
+    // Form submit
+    document.querySelector("form").addEventListener("submit", function (e) {
+        var name = document.querySelector(".user-name").value
+          , inserted = Highscores.insert(name, game.passedTime, game.flippedPairs)
+          ;
+
+        document.querySelector(".enter-name").classList.add("hide");
+        showHighscores();
+
+        var toSelect = document.querySelectorAll("[data-timestamp='" + inserted.timestamp + "']");
+        toSelect[0].classList.add("selected");
+        toSelect[1].classList.add("selected");
+
+        e.preventDefault();
     });
 })();
 

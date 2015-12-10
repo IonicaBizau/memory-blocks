@@ -8,48 +8,48 @@
         <script src="js/highscores.js"></script>
         <title>match.js</title>
     </head>
-    <body>
+    <body class="unselectable">
         <div class="container">
-            <p class="description">Check out the project on <a target="blank" href="https://github.com/IonicaBizau/match.js">GitHub</a>.</p>
             <main>
-                <div class="game-controls">
+                <div class="game-controls text-center">
                     <button class="retro-border toggle-colors">Toggle Colors</button>
                     <button class="retro-border restart">Restart</button>
                     <button class="retro-border show-highscores">Show highscores</button>
+                    <button class="retro-border view-on-github">View on GitHub</button>
                 </div>
                 <div class="background background-easy">
                 </div>
-                <div class="congrats retro-window retro-border">
+                <div class="congrats retro-window retro-border hide">
                     <div class="title">Congratulations!</div>
-                    <div class="enter-name">
+                    <div class="enter-name hide">
                         <p class="text-left">You have one of the top scores.<br>
                         Please enter your name...</p>
                         <form class="text-center">
-                            <input type="text" name="user">
+                            <input type="text" class="user-name">
                             <button class="retro-border ok-btn">OK</button>
                         </form>
                     </div>
                 </div>
                 <div class="highscores retro-window retro-border">
                     <div class="title">Little Board High Scores</div>
-                    <div class="board">
+                    <div class="board fastest-times">
                         <div class="title">The Fastest Times</div>
                         <table border="0">
                             <tbody>
                                 <tr>
                                     <td>1.</td>
-                                    <td>Ionică</td>
-                                    <td>88</td>
+                                    <td></td>
+                                    <td></td>
                                     <td>Seconds</td>
-                                    <td>81</td>
+                                    <td></td>
                                     <td>Total Pairs Flipped</td>
                                 </tr>
-                                <tr class="selected">
+                                <tr>
                                     <td>2.</td>
-                                    <td>Ionică</td>
-                                    <td>88</td>
+                                    <td></td>
+                                    <td></td>
                                     <td>Seconds</td>
-                                    <td>81</td>
+                                    <td></td>
                                     <td>Total Pairs Flipped</td>
                                 </tr>
                                 <tr>
@@ -79,24 +79,24 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="board">
+                    <div class="board fewest-pairs">
                         <div class="title">The Fewest Total Pairs Flipped</div>
                         <table border="0">
                             <tbody>
                                 <tr>
                                     <td>1.</td>
-                                    <td>Ionică</td>
-                                    <td>88</td>
+                                    <td></td>
+                                    <td></td>
                                     <td>Seconds</td>
-                                    <td>81</td>
+                                    <td></td>
                                     <td>Total Pairs Flipped</td>
                                 </tr>
-                                <tr class="selected">
+                                <tr>
                                     <td>2.</td>
-                                    <td>Ionică</td>
-                                    <td>88</td>
+                                    <td></td>
+                                    <td></td>
                                     <td>Seconds</td>
-                                    <td>81</td>
+                                    <td></td>
                                     <td>Total Pairs Flipped</td>
                                 </tr>
                                 <tr>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
                 <div class="game-info">
-                    <small>Time: <span class="time">00:00</span> Total pairs flipped: <span class="pairs-count">0</span></small>
+                    <small>Time: <span class="time">0</span> Total pairs flipped: <span class="pairs-count">0</span></small>
                 </div>
                 <div class="game wrap">
                 </div>

@@ -8,13 +8,12 @@ var Highscores = {
         }
         return this.sort(ls);
     }
+  , reset: function () {
+        localStorage.setItem("highscores", "");
+    }
   , _sort: function (by) {
         return function (a, b) {
-            if (by === "time") {
-                return a[by] < b[by];
-            } else {
-                return a[by] > b[by];
-            }
+            return a[by] > b[by];
         }
     }
   , sort: function (ls) {
@@ -30,17 +29,17 @@ var Highscores = {
         // 2 - fewestpairs
         // 3 - fastesttimes && fewestpairs
         if (
-             (!s.fastestTimes.length && !s.fewestPairs.length)
+             (s.fastestTimes.length < 5 && s.fewestPairs.length < 5)
           || (s.fastestTimes.slice(-1)[0].time > time && s.fewestPairs.slice(-1)[0].pairs > pairs)
         ) {
             return 3;
         }
 
-        if (!s.fastestTimes.length || s.fastestTimes.slice(-1)[0].time > time) {
+        if (s.fastestTimes.length < 5 || s.fastestTimes.slice(-1)[0].time > time) {
             return 1;
         }
 
-        if (!s.fewestPairs.length || s.fewestPairs.slice(-1)[0].pairs > pairs) {
+        if (s.fewestPairs.length < 5 || s.fewestPairs.slice(-1)[0].pairs > pairs) {
             return 2;
         }
 
