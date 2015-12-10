@@ -31,7 +31,6 @@ main {
     position: absolute;
     display: inline-block;
     text-align: center;
-    cursor: pointer;
 }
 
 .game {
@@ -400,4 +399,40 @@ button.retro-border {
    */
    -ms-user-select: none;
    user-select: none;
+}
+
+.bg-win {
+    background: #FFFF00;
+}
+
+.bg-win-purple {
+    background: #FF00FF;
+}
+
+.bg-win-purple small {
+    color: white;
+}
+
+
+/* hacking the direction */
+.game > div.spin .front {
+    top: -5px;
+}
+
+.game > div.spin .back {
+    bottom: -9px;
+    left: -1px;
+}
+
+.game > div.spin .right {
+    transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.4, -1) skewY(184deg) !important;
+}
+
+.game > div.spin .bottom {
+    transform: rotateX(81deg) translateX(-1px) translateY(-20px) translateZ(-4px) scale(1, .5);
+}
+
+.game > div.spin .left,
+.game > div.spin .top {
+    display: none;
 }
