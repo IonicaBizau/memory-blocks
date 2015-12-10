@@ -106,7 +106,7 @@
         }
     ]);
 
-    document.querySelector(".ok-btn").addEventListener("click", function () {
+    document.querySelector(".highscores .ok-btn").addEventListener("click", function () {
         document.querySelector(".highscores").style.display = "none";
     });
 
