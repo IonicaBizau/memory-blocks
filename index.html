@@ -5,12 +5,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/caiuss/1.0.2/caiuss.min.css" type="text/css" media="screen" charset="utf-8">
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
         <script src="js/match.min.js"></script>
+        <script src="js/highscores.js"></script>
         <title>match.js</title>
     </head>
     <body>
         <div class="container">
             <p class="description">Check out the project on <a target="blank" href="https://github.com/IonicaBizau/match.js">GitHub</a>.</p>
             <main>
+                <div class="game-controls">
+                    <button class="retro-border toggle-colors">Toggle Colors</button>
+                    <button class="retro-border restart">Restart</button>
+                    <button class="retro-border show-highscores">Show highscores</button>
+                </div>
                 <div class="background background-easy">
                 </div>
                 <div class="congrats retro-window retro-border">
@@ -74,7 +80,7 @@
                         </table>
                     </div>
                     <div class="board">
-                        <div class="title">The Fastest Times</div>
+                        <div class="title">The Fewest Total Pairs Flipped</div>
                         <table border="0">
                             <tbody>
                                 <tr>
