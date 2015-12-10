@@ -147,5 +147,20 @@
     game.on("pair-flip", function () {
         pairsCountEl.innerHTML = game.flippedPairs;
     });
+
+    // Restart game
+    document.querySelector(".restart").addEventListener("click", function () {
+        location.reload();
+    });
+
+    // Toggle colors
+    document.querySelector(".toggle-colors").addEventListener("click", function () {
+        document.body.classList.toggle("grayscale");
+    });
+
+    // Show highscores
+    document.querySelector(".show-highscores").addEventListener("click", function () {
+        document.querySelector(".highscores").style.display = "block";
+    });
 })();
 
