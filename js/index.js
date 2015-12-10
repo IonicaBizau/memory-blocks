@@ -3,8 +3,8 @@
         templateElm: ".templates > div"
       , autoremove: false
       , size: {
-            x: 6
-          , y: 5
+            x: 1
+          , y: 2
         }
       , step: {
             x: 125
@@ -106,9 +106,12 @@
         }
     ]);
 
+    document.querySelector(".ok-btn").addEventListener("click", function () {
+        document.querySelector(".highscores").style.display = "none";
+    });
+
     game.on("win", function () {
         setTimeout(function () {
-            alert("You won!");
             window.location = "https://github.com/IonicaBizau/match.js";
         }, 1000);
     });
