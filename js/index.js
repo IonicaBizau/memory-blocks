@@ -227,7 +227,9 @@
 
         var toSelect = document.querySelectorAll("[data-timestamp='" + inserted.timestamp + "']");
         toSelect[0].classList.add("selected");
-        toSelect[1].classList.add("selected");
+        if (toSelect[1]) {
+            toSelect[1].classList.add("selected");
+        }
 
         e.preventDefault();
     });
