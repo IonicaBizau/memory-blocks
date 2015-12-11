@@ -156,16 +156,12 @@ img {
     transform: translateZ(-18px) translateY(-5px);
 }
 
-@keyframes spin {
-    from { transform: rotateY(0); }
-    to { transform: rotateY(-170deg); }
-}
 
 .spin {
-    -webkit-animation: spin .4s forwards;
-    -moz-animation: spin .4s forwards;
-    -o-animation: spin .4s forwards;
-    animation: spin .4s forwards;
+    -webkit-animation: spin .3s forwards;
+    -moz-animation: spin .3s forwards;
+    -o-animation: spin .3s forwards;
+    animation: spin .3s forwards;
 }
 
 @keyframes spinned-zoom-out {
@@ -191,10 +187,10 @@ img {
 }
 
 .unspin {
-    -webkit-animation: unspin .4s forwards;
-    -moz-animation: unspin .4s forwards;
-    -o-animation: unspin .4s forwards;
-    animation: unspin .4s forwards;
+    -webkit-animation: unspin .3s forwards;
+    -moz-animation: unspin .3s forwards;
+    -o-animation: unspin .3s forwards;
+    animation: unspin .3s forwards;
 }
 
 .background {
@@ -413,7 +409,6 @@ button.retro-border {
     color: white;
 }
 
-
 /* hacking the direction */
 .game > div.spin .front {
     top: -5px;
@@ -425,14 +420,22 @@ button.retro-border {
 }
 
 .game > div.spin .right {
-    transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.4, -1) skewY(184deg) !important;
+    transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.5, -1) skewY(184deg) !important;
 }
 
 .game > div.spin .bottom {
     transform: rotateX(81deg) translateX(-1px) translateY(-20px) translateZ(-4px) scale(1, .5);
 }
 
-.game > div.spin .left,
-.game > div.spin .top {
+.game > div.spin .left {
     display: none;
+}
+
+.game > div.spin .top {
+    transform: rotateZ(180deg) rotateX(-79deg) translateZ(10px) translateY(36px);
+}
+
+@keyframes spin {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(-170deg); }
 }
