@@ -4,8 +4,6 @@ body.grayscale {
             filter: grayscale(1);
 }
 
-
-
 body, html {
     height: 100%;
     padding: 0;
@@ -119,6 +117,7 @@ img {
     transform: rotateZ(180deg) rotateX(-99deg) translateZ(8px) translateY(31px) translateZ(15px);
     height: 30px !important;
     background: #ffff00;
+    z-index: 0;
 }
 
 .right {
@@ -128,6 +127,7 @@ img {
     -o-transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
     transform: rotateY(-270deg) translateX(53px) scale(.4, 1) skewY(3deg);
     transform-origin: top right;
+    z-index: 0;
 }
 
 .left {
@@ -146,6 +146,7 @@ img {
     -o-transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
     transform: rotateX(99deg) translateY(-17px) translateZ(8px) scale(1, .5);
     transform-origin: bottom center;
+    z-index: 1;
 }
 
 .back {
@@ -154,6 +155,7 @@ img {
     -ms-transform: translateZ(-18px) translateY(-5px);
     -o-transform: translateZ(-18px) translateY(-5px);
     transform: translateZ(-18px) translateY(-5px);
+    z-index: 1;
 }
 
 
@@ -162,6 +164,18 @@ img {
     -moz-animation: spin .3s forwards;
     -o-animation: spin .3s forwards;
     animation: spin .3s forwards;
+}
+
+.spin .front {
+    -webkit-animation: spin-front .3s forwards;
+    -moz-animation: spin-front .3s forwards;
+    -o-animation: spin-front .3s forwards;
+    animation: spin-front .3s forwards;
+    z-index: 0;
+}
+
+.spin .right {
+    z-index: 1;
 }
 
 @keyframes spinned-zoom-out {
@@ -284,11 +298,19 @@ span.time {
 .board-title {
     text-align: center;
     background: white;
-    width: 140px;
     top: -8px;
-    position: relative;
+    position: absolute;
     left: 50%;
-    margin-left: -70px;
+}
+
+.board.fastest-times .board-title {
+    width: 150px;
+    margin-left: -75px;
+}
+
+.board.fewest-pairs .board-title {
+    width: 240px;
+    margin-left: -120px;
 }
 
 .highscores table {
@@ -343,7 +365,7 @@ span.time {
 }
 
 button.retro-border {
-    width: 130px;
+    width: 150px;
     height: 30px;
     margin: 0 20px;
     background: #F0F0F0;
@@ -420,11 +442,19 @@ button.retro-border {
 }
 
 .game > div.spin .right {
-    transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.5, -1) skewY(184deg) !important;
+    -webkit-transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.5, -1) skewY(184deg);
+       -moz-transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.5, -1) skewY(184deg);
+        -ms-transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.5, -1) skewY(184deg);
+         -o-transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.5, -1) skewY(184deg);
+            transform: rotateY(-270deg) translateY(68px) translateX(58px) scale(.5, -1) skewY(184deg);
 }
 
 .game > div.spin .bottom {
-    transform: rotateX(81deg) translateX(-1px) translateY(-20px) translateZ(-4px) scale(1, .5);
+    -webkit-transform: rotatex(81deg) translatex(-1px) translatey(-20px) translatez(-4px) scale(1, .5);
+       -moz-transform: rotatex(81deg) translatex(-1px) translatey(-20px) translatez(-4px) scale(1, .5);
+        -ms-transform: rotatex(81deg) translatex(-1px) translatey(-20px) translatez(-4px) scale(1, .5);
+         -o-transform: rotatex(81deg) translatex(-1px) translatey(-20px) translatez(-4px) scale(1, .5);
+            transform: rotatex(81deg) translatex(-1px) translatey(-20px) translatez(-4px) scale(1, .5);
 }
 
 .game > div.spin .left {
@@ -432,10 +462,19 @@ button.retro-border {
 }
 
 .game > div.spin .top {
-    transform: rotateZ(180deg) rotateX(-79deg) translateZ(10px) translateY(36px);
+    -webkit-transform: rotateZ(180deg) rotateX(-79deg) translateZ(10px) translateY(36px);
+       -moz-transform: rotateZ(180deg) rotateX(-79deg) translateZ(10px) translateY(36px);
+        -ms-transform: rotateZ(180deg) rotateX(-79deg) translateZ(10px) translateY(36px);
+         -o-transform: rotateZ(180deg) rotateX(-79deg) translateZ(10px) translateY(36px);
+            transform: rotateZ(180deg) rotateX(-79deg) translateZ(10px) translateY(36px);
 }
 
 @keyframes spin {
-    from { transform: rotateY(0); }
-    to { transform: rotateY(-170deg); }
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(-170deg); }
+}
+
+@keyframes spin-front {
+    30% { z-index: 2; }
+    100% { z-index: 2; }
 }
