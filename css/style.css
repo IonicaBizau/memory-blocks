@@ -478,3 +478,6 @@ button.retro-border {
     30% { z-index: 2; }
     100% { z-index: 2; }
 }
+.cube.active {
+    margin-top: -1px;
+}
