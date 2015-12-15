@@ -233,5 +233,11 @@
 
         e.preventDefault();
     });
+
+    document.querySelector(".btn-about").addEventListener("click", function (e) {
+        document.querySelector(".window-about").classList.toggle("hide");
+    });
+
+
 })();
 
