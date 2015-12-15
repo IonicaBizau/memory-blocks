@@ -37,6 +37,7 @@ main {
     left: 40px;
     top: 30px;
 }
+
 .game > div .front {
     position: absolute;
     width: 100%;
@@ -50,6 +51,7 @@ main {
     position: absolute;
     left: -0.6px;
 }
+
 img {
     height: 100%;
     width: 100%;
@@ -218,18 +220,6 @@ img {
     background-color: #0FF;
 }
 
-
-h1 { margin-top: 20px; }
-a:hover { color: inherit !important; }
-.description { margin-top: 0; }
-.hide { display: none; }
-small {
-    color: rgb(183, 183, 183);
-    font-size: 13px;
-    margin-left: 12px;
-    cursor: default;
-}
-
 h1 { margin-top: 20px; }
 a:hover { color: inherit !important; }
 .description { margin-top: 0; }
@@ -367,7 +357,7 @@ span.time {
 button.retro-border {
     width: 150px;
     height: 30px;
-    margin: 0 20px;
+    margin: 6px 20px;
     background: #F0F0F0;
     cursor: pointer;
 }
@@ -398,7 +388,7 @@ button.retro-border {
 }
 .game-controls {
     position: absolute;
-    top: -60px;
+    top: -86px;
     left: 0;
     right: 0;
 }
@@ -406,6 +396,7 @@ button.retro-border {
 .highscores {
     display: none;
 }
+
 .unselectable {
    -moz-user-select: -moz-none;
    -khtml-user-select: none;
@@ -478,6 +469,23 @@ button.retro-border {
     30% { z-index: 2; }
     100% { z-index: 2; }
 }
+
 .cube.active {
     margin-top: -1px;
+}
+
+.window-about {
+    width: 440px;
+    margin-left: -220px;
+}
+
+select.retro-border {
+    top: -2px;
+    height: 19px;
+    color: #444444;
+    background: rgb(255, 255, 255);
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 10px;
+    position: relative;
 }
