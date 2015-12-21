@@ -24,7 +24,7 @@ main {
 }
 
 .game > div {
-    width: 85px;
+    width: 72px;
     height: 70px;
     position: absolute;
     display: inline-block;
@@ -133,11 +133,11 @@ img {
 }
 
 .left {
-    -webkit-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-    -moz-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-    -ms-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-    -o-transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
-    transform: rotateY(270deg) translateX(-46px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    -webkit-transform: rotateY(270deg) translateX(-44px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    -moz-transform: rotateY(270deg) translateX(-44px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    -ms-transform: rotateY(270deg) translateX(-44px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    -o-transform: rotateY(270deg) translateX(-44px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
+    transform: rotateY(270deg) translateX(-44px) translateY(1px) translateZ(2px) scale(.42, 1) skewY(-4deg);
     transform-origin: center left;
 }
 
@@ -472,6 +472,7 @@ button.retro-border {
 
 .cube.active {
     margin-top: -1px;
+    margin-left: -11px;
 }
 
 .window-about {
