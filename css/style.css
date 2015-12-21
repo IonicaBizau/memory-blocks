@@ -15,16 +15,16 @@ body, html {
 
 main {
     position: absolute;
-    width: 784px;
+    width: 742px;
     left: 50%;
-    margin-left: -397px;
+    margin-left: -371px;
     top: 90px;
-    height: 650px;
+    height: 612px;
     box-shadow: 0 15px 85px rgba(0, 0, 0, 0.19);
 }
 
 .game > div {
-    width: 72px;
+    width: 73px;
     height: 70px;
     position: absolute;
     display: inline-block;
@@ -34,8 +34,8 @@ main {
 .game {
     text-align: center;
     position: absolute;
-    left: 40px;
-    top: 30px;
+    left: 55px;
+    top: 55px;
 }
 
 .game > div .front {
@@ -211,9 +211,10 @@ img {
 
 .background {
     position: absolute;
-    width: 780px;
-    height: 600px;
+    width: 740px;
+    height: 560px;
     border: 2px solid black;
+    top: 20px;
 }
 
 .background.background-easy {
@@ -237,8 +238,8 @@ small {
     border: 2px solid black;
     padding: 15px;
     background-color: white;
-    width: 750px;
-    top: 602px;
+    width: 710px;
+    top: 581px;
     text-align: right;
 }
 
@@ -388,7 +389,7 @@ button.retro-border {
 }
 .game-controls {
     position: absolute;
-    top: -86px;
+    top: -76px;
     left: 0;
     right: 0;
 }
