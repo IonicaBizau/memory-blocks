@@ -15,12 +15,21 @@ body, html {
 
 main {
     position: absolute;
-    width: 742px;
-    left: 50%;
-    margin-left: -371px;
     top: 90px;
     height: 612px;
     box-shadow: 0 15px 85px rgba(0, 0, 0, 0.19);
+}
+
+body[game-skill=little] main {
+    width: 742px;
+    left: 50%;
+    margin-left: -371px;
+}
+
+body[game-skill=big] main {
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
 }
 
 .game > div {
@@ -29,6 +38,10 @@ main {
     position: absolute;
     display: inline-block;
     text-align: center;
+}
+
+body[game-skill=big] .game {
+    top: 20px;
 }
 
 .game {
@@ -211,10 +224,19 @@ img {
 
 .background {
     position: absolute;
-    width: 740px;
-    height: 560px;
     border: 2px solid black;
     top: 20px;
+}
+
+body[game-skill=little] .background {
+    width: 740px;
+    height: 560px;
+}
+
+body[game-skill=big] .background {
+    width: 1195px;
+    height: 660px;
+    top: -20px;
 }
 
 .background.background-easy {
@@ -238,9 +260,17 @@ small {
     border: 2px solid black;
     padding: 15px;
     background-color: white;
+    text-align: right;
+}
+
+body[game-skill=little] .game-info {
     width: 710px;
     top: 581px;
-    text-align: right;
+}
+
+body[game-skill=big] .game-info {
+    width: 1165px;
+    top: 642px;
 }
 
 span.time {
@@ -387,10 +417,11 @@ button.retro-border {
 .congrats form .ok-btn {
     width: 50px;
 }
+
 .game-controls {
     position: absolute;
-    top: -76px;
     left: 0;
+    top: -76px;
     right: 0;
 }
 

@@ -10,6 +10,7 @@
       , $pairsCount = $(".pairs-count")
       , $highscores = $(".highscores")
       , $body = $(document.body)
+      , $skillSelect = $("select")
       ;
 
     function closeAbout() {
@@ -30,13 +31,18 @@
             $game.removeClass("bg-win-purple", "bg-win");
         }
 
+        var gameSize = gameSkill === "little" ? {
+            x: 6
+          , y: 5
+        } : {
+            x: 10
+          , y: 6
+        };
+
         game = new Match(".game", {
             templateElm: ".templates > div"
           , autoremove: false
-          , size: {
-                x: 1
-              , y: 2
-            }
+          , size: gameSize
           , step: {
                 x: 115
               , y: 105
@@ -274,4 +280,10 @@
     $(".btn-about").on("click", function (e) {
         $aboutWindow.toggleClass("hide");
     });
+
+    $skillSelect.on("change", function () {
+        gameSkill = this.value;
+        $body.attr("game-skill", gameSkill);
+        newGame();
+    }).trigger("change");
 })();
