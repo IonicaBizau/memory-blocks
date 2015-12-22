@@ -26,14 +26,16 @@
         if (game) {
             clearInterval(game.timer);
             clearInterval(game.winInterval);
+            $congrats.addClass("hide");
+            $game.removeClass("bg-win-purple", "bg-win");
         }
 
         game = new Match(".game", {
             templateElm: ".templates > div"
           , autoremove: false
           , size: {
-                x: 6
-              , y: 5
+                x: 1
+              , y: 2
             }
           , step: {
                 x: 115
@@ -144,7 +146,7 @@
                   ;
 
                 $game.addClass("bg-win");
-                game.winTerminal = setInterval(function () {
+                game.winInterval = setInterval(function () {
                     $game.toggleClass("bg-win-purple");
                 }, 500);
 
@@ -190,7 +192,7 @@
         });
 
         game.on("pair-flip", function () {
-            $pairsCount.html(game.flippedPairs);
+            $pairsCount.html(game.flippedPairs + 1);
         });
 
         game.start();
@@ -201,8 +203,12 @@
 
         function forTable(selector, scores) {
             var elms = $(selector + " table tbody tr");
-            elms.each(function ($cRow, i) {
-                var $tds = $("td", $cRow);
+            elms.each(function (cRow, i) {
+
+                var $cRow = $(cRow)
+                  , $tds = $("td", $cRow)
+                  ;
+
                 scores[i] = scores[i] || {
                     name: ""
                   , time: ""
