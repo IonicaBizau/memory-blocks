@@ -13,7 +13,7 @@
             <main>
                 <div class="game-controls text-center">
                     <button class="retro-border toggle-colors">Toggle Colors</button>
-                    <button class="retro-border restart">Restart</button>
+                    <button class="retro-border restart">New Game</button>
                     <button class="retro-border show-highscores">Show highscores</button>
                     <button class="retro-border view-on-github">View on GitHub</button>
                     <button class="retro-border btn-skill">
@@ -23,7 +23,7 @@
                             <option value="">Big board</option>
                         </select>
                     </button>
-                    <button class="retro-border btn-about">About</button>
+                    <button class="retro-border btn-about">About &amp; How to play</button>
                 </div>
                 <div class="background background-easy">
                 </div>
@@ -38,13 +38,23 @@
                         </form>
                     </div>
                 </div>
-                <div class="window-about retro-window retro-border hide">
-                    <div class="title">About</div>
-                    Lorem ipsum dolor sit amet
-                    Lorem ipsum dolor sit amet
-                    Lorem ipsum dolor sit amet
-                    Lorem ipsum dolor sit amet
-                    Lorem ipsum dolor sit amet
+                <div class="window-about retro-window retro-border">
+                    <div class="title">Welcome to Memory Blocks!</div>
+                    <p>Tiles are randomly dealt with the picture side down.</p>
+                    <p>Flip over any two tiles by clicking on them. If the pictures on the tiles are identical then they will disappear. If they are not identical then they will be flipped back to picture-side-down.</p>
+                    <p>Continue flipping pairs until all matches have been found and there are no more tiles.</p>
+                    <p>You are scored two ways. First, by the number of seconds it takes for you to find all of the matches. Second, by the total number of pairs you need to flip in order to find all of the matches.</p>
+                    <p>The top scores are displayed on the high score list.</p>
+                    <p>Good luck!</p>
+                    <div class="text-center">
+                    <p>* * *</p>
+                    <p>SYMANTEC GAME PACK</p>
+                    <p>Memory Blocks</p>
+                    <p>Version 1.00</p>
+                    <p>Copyright © 1991 Charles Timmerman</p>
+                    <p>Ported to web, with &lt;3 and author's permission, by <a href="http://ionicabizau.net">Ionică Bizău</a>.</p>
+                    <button class="retro-border close-about">OK</button>
+                    </div>
                 </div>
 
                 <div class="highscores retro-window retro-border">

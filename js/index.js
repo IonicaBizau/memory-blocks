@@ -1,5 +1,15 @@
 (function () {
     var game = null;
+
+    function closeAbout() {
+        if (game === null) {
+            newGame();
+        }
+        document.querySelector(".window-about").classList.add("hide");
+    }
+
+    document.querySelector(".close-about").addEventListener("click", closeAbout);
+
     function newGame() {
 
         if (game) {
@@ -113,6 +123,8 @@
                 img: "images/8-chees.png"
             }
         ]);
+
+        closeAbout();
 
         game.on("win", function () {
             setTimeout(function () {
