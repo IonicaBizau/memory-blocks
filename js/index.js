@@ -1,14 +1,25 @@
 (function () {
-    var game = null;
+    var game = null
+      , $aboutWindow = $(".window-about")
+      , $closeAboutBtn = $(".close-about")
+      , $game = $(".game-info")
+      , $enterName = $(".enter-name")
+      , $congrats = $(".congrats")
+      , $nameInput = $("form input.user-name")
+      , $time = $(".time")
+      , $pairsCount = $(".pairs-count")
+      , $highscores = $(".highscores")
+      , $body = $(document.body)
+      ;
 
     function closeAbout() {
         if (game === null) {
             newGame();
         }
-        document.querySelector(".window-about").classList.add("hide");
+        $aboutWindow.addClass("hide");
     }
 
-    document.querySelector(".close-about").addEventListener("click", closeAbout);
+    $closeAboutBtn.on("click", closeAbout);
 
     function newGame() {
 
@@ -130,55 +141,56 @@
             setTimeout(function () {
                 var time = game.passedTime
                   , pairs = game.flippedPairs
-                  , gameEl = document.querySelector(".game-info")
                   ;
 
-                gameEl.classList.add("bg-win");
+                $game.addClass("bg-win");
                 game.winTerminal = setInterval(function () {
-                    gameEl.classList.toggle("bg-win-purple");
+                    $game.toggleClass("bg-win-purple");
                 }, 500);
 
-                var enterNameEl = document.querySelector(".enter-name");
-                var congratsEl = document.querySelector(".congrats");
                 if (Highscores.check(pairs, time)) {
-                    enterNameEl.classList.remove("hide");
+                    $enterName.removeClass("hide");
                     setTimeout(function() {
-                        document.querySelector("form input").focus();
+                        $nameInput.focus();
                     }, 10);
                 } else {
-                    enterNameEl.classList.add("hide");
+                    $enterName.addClass("hide");
                 }
-                congratsEl.classList.remove("hide");
+                $congrats.removeClass("hide");
             }, 1500);
         });
 
         game.on("activate", function (elm) {
-          elm.classList.remove("unspin");
-          elm.classList.add("spin");
+            $(elm).removeClass("unspin").addClass("spin");
         });
 
         game.on("deactivate", function (elm) {
-          elm.classList.add("unspin");
-          elm.classList.remove("spin");
+            $(elm).removeClass("spin").addClass("unspin");
         });
 
         game.on("success", function (elm1, elm2) {
+            var $elm1 = $(elm1)
+              , $elm2 = $(elm2)
+              ;
+
             setTimeout(function() {
-                elm1.classList.add("spinned-zoom-out");
-                elm2.classList.add("spinned-zoom-out");
+                $elm1.addClass("spinned-zoom-out");
+                $elm2.addClass("spinned-zoom-out");
                 setTimeout(function() {
-                    elm1.remove();
-                    elm2.remove();
+                    $elm1.remove();
+                    $elm2.remove();
                 }, 900);
             }, 1000);
         });
 
         game.on("time", function (time) {
-            game.passedTime = timeEl.innerHTML = Math.floor(time / 1000);
+            var sec = Math.floor(time / 1000);
+            $time.html(sec);
+            game.passedTime = sec;
         });
 
         game.on("pair-flip", function () {
-            pairsCountEl.innerHTML = game.flippedPairs;
+            $pairsCount.html(game.flippedPairs);
         });
 
         game.start();
@@ -188,79 +200,72 @@
         var hScores = Highscores.get();
 
         function forTable(selector, scores) {
-            var elms = document.querySelectorAll(selector + " table tbody tr");
-            for (var i = 0; i < elms.length; ++i) {
-                var cRow = elms[i];
-                var tds = cRow.querySelectorAll("td");
-                scores[i] = scores[i] || { name: "", time: "", pairs: "", timestamp: "" };
-                tds[1].textContent = scores[i].name;
-                tds[2].textContent = scores[i].time;
-                tds[4].textContent = scores[i].pairs;
-                cRow.setAttribute("data-timestamp", scores[i].timestamp.toString());
-                cRow.classList.remove("selected");
-            }
+            var elms = $(selector + " table tbody tr");
+            elms.each(function ($cRow, i) {
+                var $tds = $("td", $cRow);
+                scores[i] = scores[i] || {
+                    name: ""
+                  , time: ""
+                  , pairs: ""
+                  , timestamp: ""
+                };
+
+                $tds.eq(1).text(scores[i].name);
+                $tds.eq(2).text(scores[i].time);
+                $tds.eq(4).text(scores[i].pairs);
+
+                $cRow.attr("data-timestamp", scores[i].timestamp.toString());
+                $cRow.removeClass("selected");
+            });
         }
 
         forTable(".fastest-times", hScores.fastestTimes);
         forTable(".fewest-pairs", hScores.fewestPairs);
-        document.querySelector(".highscores").style.display = "block";
+        $highscores.show();
     }
 
-    document.querySelector(".highscores .ok-btn").addEventListener("click", function () {
-        document.querySelector(".highscores").style.display = "none";
+    $(".highscores .ok-btn").on("click", function () {
+        $highscores.hide();
     });
-
-
-    var timeEl = document.getElementsByClassName("time")[0];
-
-    var pairsCountEl = document.getElementsByClassName("pairs-count")[0];
 
     // Restart game
-    document.querySelector(".restart").addEventListener("click", function () {
-        newGame();
-    });
+    $(".restart").on("click", newGame);
 
     // Toggle colors
-    document.querySelector(".toggle-colors").addEventListener("click", function () {
-        document.body.classList.toggle("grayscale");
+    $(".toggle-colors").on("click", function () {
+        $body.toggleClass("grayscale");
     });
 
     // Show highscores
-    document.querySelector(".show-highscores").addEventListener("click", function () {
-        showHighscores();
-    });
+    $(".show-highscores").on("click", showHighscores);
 
     // Reset highscores
-    document.querySelector(".reset-btn").addEventListener("click", function () {
+    $(".reset-btn").on("click", function () {
         Highscores.reset();
         showHighscores();
     });
 
     // View on GitHub
-    document.querySelector(".view-on-github").addEventListener("click", function () {
-        location = "https://github.com/IonicaBizau/blocks";
+    $(".view-on-github").on("click", function () {
+        window.location = "https://github.com/IonicaBizau/blocks";
     });
 
     // Form submit
-    document.querySelector("form").addEventListener("submit", function (e) {
-        var name = document.querySelector(".user-name").value
+    $("form").on("submit", function (e) {
+        var name = $nameInput.val()
           , inserted = Highscores.insert(name, game.passedTime, game.flippedPairs)
           ;
 
-        document.querySelector(".enter-name").classList.add("hide");
+        $enterName.addClass("hide");
         showHighscores();
 
-        var toSelect = document.querySelectorAll("[data-timestamp='" + inserted.timestamp + "']");
-        toSelect[0].classList.add("selected");
-        if (toSelect[1]) {
-            toSelect[1].classList.add("selected");
-        }
+        var $toSelect = $("[data-timestamp='" + inserted.timestamp + "']");
+        $toSelect.addClass("selected");
 
         e.preventDefault();
     });
 
-    document.querySelector(".btn-about").addEventListener("click", function (e) {
-        document.querySelector(".window-about").classList.toggle("hide");
+    $(".btn-about").on("click", function (e) {
+        $aboutWindow.toggleClass("hide");
     });
 })();
-
