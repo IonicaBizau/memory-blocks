@@ -4,12 +4,12 @@
 
 The old Memory Blocks game (part of Symantec Game Pack) ported to modern web.
 
-## A Bit of History
+## :memo: A Bit of History
 
-2003 was when I first played a computer game. I was 8 year old.
-It happened when we visited a friend in the neighboring village. I really enjoyed that game.
+2001 the year was when I first played a computer game. I was 6 year old.
+It happened when we visited a friend in the neighboring village. I really enjoyed that game. That time there were just few people having computers.
 
-It was **Memory Blocks**. The game is part of the *Symantec Game Pack*, coded by Charles Timmerman–founder of [Funster](http://funster.com) and author of over 90 puzzle books.
+The game I played was **Memory Blocks**. It is part of the *Symantec Game Pack*, coded by Charles Timmerman–founder of [Funster](http://funster.com) and author of over 90 puzzle books.
 
 In the meantime I became a web developer and finally decided to port this game to WEB. Yes, you're looking at it and you can play it in your browser.
 
@@ -50,10 +50,10 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 
 ## Thanks
 
- - Lot of thnaks to [Charles Timmerman](http://funster.com/)–the
+ - Lots of thanks to [Charles Timmerman](http://funster.com/)–the
     author of the original game, part of Symantec Game Pack for
-    Windows. He allowed me to use the images and designs in this
-    ame clone. :cake:
+    Windows. He granted me permissions to use the game images and design in this
+    clone. :cake:
  - Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:
 
 ## License
