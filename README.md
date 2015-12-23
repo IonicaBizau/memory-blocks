@@ -9,13 +9,13 @@ The old Memory Blocks game (part of Symantec Game Pack) ported to modern web.
 2003 was when I first played a computer game. I was 8 year old.
 It happened when we visited a friend in the neighboring village. I really enjoyed that game.
 
-It was **Memory Blocks**, from the *Symantec Game Pack* for Windows, coded by Charles Timmerman.
+It was **Memory Blocks**. The game is part of the *Symantec Game Pack*, coded by Charles Timmerman–founder of [Funster](http://funster.com) and author of over 90 puzzle books.
 
-In the meantime I became a web developer and finally decided to port it to WEB. Yes, you're looking at it and you can play it in your browser.
+In the meantime I became a web developer and finally decided to port this game to WEB. Yes, you're looking at it and you can play it in your browser.
 
 ----
 
-I contacted Charles Timmerman (the author of the original game) and shown him what I did. He was so happy to see his game alive on a modern platform:
+I contacted Charles Timmerman and showed him what I built. He was so happy to see his game alive on a modern platform:
 
 > Amazing! That looks exactly my game!
 > I like how the high score table looks the same and even the black & white option is preserved. In those days, there were Windows computers that were in black & white! You might be interested to know that I wrote all the games in assembly language- my choice in those days over the usual C.
@@ -41,7 +41,7 @@ I asked him to tell me more about the game history. He said:
 
 [![](http://i.imgur.com/JVEhOGA.png)](https://ionicabizau.github.io/memory-blocks/)
 
-### :camel: High Scores, Little board, greyscale
+### :tv: High Scores, Little board, greyscale
 
 [![](http://i.imgur.com/XtZct1R.png)](https://ionicabizau.github.io/memory-blocks/)
 
