@@ -35,15 +35,15 @@ I asked him to tell me more about the game history. He said:
 ## :camera: Screenshots
 ### :question: About & How to play
 
-[![](http://i.imgur.com/bRkFKJH.png)](https://ionicabizau.github.io/memory-blocks/)
+[![](http://i.imgur.com/3Y7jJvF.png)](https://ionicabizau.github.io/memory-blocks/)
 
 ### :camel: High Scores, Big board, colored
 
-[![](http://i.imgur.com/JVEhOGA.png)](https://ionicabizau.github.io/memory-blocks/)
+[![http://i.imgur.com/OymyC8A.png]()](https://ionicabizau.github.io/memory-blocks/)
 
 ### :tv: High Scores, Little board, greyscale
 
-[![](http://i.imgur.com/XtZct1R.png)](https://ionicabizau.github.io/memory-blocks/)
+[![](http://i.imgur.com/OydrO2v.png)](https://ionicabizau.github.io/memory-blocks/)
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
