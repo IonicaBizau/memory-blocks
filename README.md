@@ -32,7 +32,18 @@ I asked him to tell me more about the game history. He said:
 > in those days). I think these familiar games resonated
 > with people and lead to their success.
 
-[![memory-blocks](http://i.imgur.com/m6ToUa4.png)](https://ionicabizau.github.io/memory-blocks/)
+## :camera: Screenshots
+### :question: About & How to play
+
+![http://i.imgur.com/bRkFKJH.png](https://ionicabizau.github.io/memory-blocks/)
+
+### :camel: High Scores, Big board, colored
+
+![http://i.imgur.com/JVEhOGA.png](https://ionicabizau.github.io/memory-blocks/)
+
+### :camel: High Scores, Little board, greyscale
+
+![http://i.imgur.com/XtZct1R.png](https://ionicabizau.github.io/memory-blocks/)
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].

@@ -31,9 +31,7 @@
   "blah": {
     "title": "Memory Blocks",
     "h_img": "http://i.imgur.com/m6ToUa4.png",
-    "ex_img": "http://i.imgur.com/m6ToUa4.png",
     "h_url": "https://ionicabizau.github.io/memory-blocks/",
-    "ex_url": "https://ionicabizau.github.io/memory-blocks/",
     "description": [
       {
         "h2": "A Bit of History"
@@ -71,6 +69,27 @@
           "in those days). I think these familiar games resonated",
           "with people and lead to their success."
         ]
+      },
+      {
+        "h2": ":camera: Screenshots"
+      },
+      {
+        "h3": ":question: About & How to play"
+      },
+      {
+        "p": "![http://i.imgur.com/bRkFKJH.png](https://ionicabizau.github.io/memory-blocks/)"
+      },
+      {
+        "h3": ":camel: High Scores, Big board, colored"
+      },
+      {
+        "p": "![http://i.imgur.com/JVEhOGA.png](https://ionicabizau.github.io/memory-blocks/)"
+      },
+      {
+        "h3": ":camel: High Scores, Little board, greyscale"
+      },
+      {
+        "p": "![http://i.imgur.com/XtZct1R.png](https://ionicabizau.github.io/memory-blocks/)"
       }
     ],
     "thanks": {
