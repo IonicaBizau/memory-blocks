@@ -11,6 +11,7 @@
       , $highscores = $(".highscores")
       , $body = $(document.body)
       , $skillSelect = $("select")
+      , $gameSkillType = $("span.game-skill-type")
       ;
 
     function closeAbout() {
@@ -205,7 +206,7 @@
     }
 
     function showHighscores() {
-        var hScores = Highscores.get();
+        var hScores = Highscores.get(gameSkill);
 
         function forTable(selector, scores) {
             var elms = $(selector + " table tbody tr");
@@ -253,7 +254,7 @@
 
     // Reset highscores
     $(".reset-btn").on("click", function () {
-        Highscores.reset();
+        Highscores.reset(gameSkill);
         showHighscores();
     });
 
@@ -265,7 +266,7 @@
     // Form submit
     $("form").on("submit", function (e) {
         var name = $nameInput.val()
-          , inserted = Highscores.insert(name, game.passedTime, game.flippedPairs)
+          , inserted = Highscores.insert(name, game.passedTime, game.flippedPairs, gameSkill)
           ;
 
         $enterName.addClass("hide");
@@ -284,6 +285,7 @@
     $skillSelect.on("change", function () {
         gameSkill = this.value;
         $body.attr("game-skill", gameSkill);
+        $gameSkillType.text(gameSkill.charAt(0).toUpperCase() + gameSkill.substring(1));
         newGame();
     }).trigger("change");
 })();

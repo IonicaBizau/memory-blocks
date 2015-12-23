@@ -1,6 +1,6 @@
 var Highscores = {
-    get: function () {
-        var ls = localStorage.getItem("highscores") || "";
+    get: function (skill) {
+        var ls = localStorage.getItem(this.getSkill(skill)) || "";
         try {
             ls = JSON.parse(ls);
         } catch (e) {
@@ -8,8 +8,11 @@ var Highscores = {
         }
         return this.sort(ls);
     }
-  , reset: function () {
-        localStorage.setItem("highscores", "");
+  , getSkill: function (skill) {
+        return "highscores-" + skill;
+    }
+  , reset: function (skill) {
+        localStorage.setItem(this.getSkill(skill), "");
     }
   , _sort: function (by) {
         return function (a, b) {
@@ -53,8 +56,8 @@ var Highscores = {
           , timestamp: new Date().getTime()
         };
     }
-  , insert: function (name, time, pairs) {
-        var s = this.get()
+  , insert: function (name, time, pairs, skill) {
+        var s = this.get(skill)
           , where = this.check(time, pairs)
           , obj = this.obj(name, time, pairs)
           ;
@@ -72,7 +75,7 @@ var Highscores = {
                 break;
         }
 
-        localStorage.setItem("highscores", JSON.stringify(s));
+        localStorage.setItem(this.getSkill(skill), JSON.stringify(s));
 
         return obj;
     }
