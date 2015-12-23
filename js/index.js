@@ -35,11 +35,11 @@
         }
 
         var gameSize = gameSkill === "little" ? {
-            x: 1//6
-          , y: 2 //5
+            x: 6
+          , y: 5
         } : {
-            x: 2// 10
-          , y: 2// 6
+            x: 10
+          , y: 6
         };
 
         game = new Match(".game", {
