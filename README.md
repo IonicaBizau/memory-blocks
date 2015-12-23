@@ -18,6 +18,7 @@ In the meantime I became a web developer and finally decided to port this game t
 I contacted Charles Timmerman and showed him what I built. He was so happy to see his game alive on a modern platform:
 
 > Amazing! That looks exactly my game!
+
 > I like how the high score table looks the same and even the black & white option is preserved. In those days, there were Windows computers that were in black & white! You might be interested to know that I wrote all the games in assembly language- my choice in those days over the usual C.
 
 I asked him to tell me more about the game history. He said:

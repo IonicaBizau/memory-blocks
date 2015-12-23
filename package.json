@@ -1,6 +1,6 @@
 {
   "name": "memory-blocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The old Memory Blocks game (part of the Symantec Game Pack) ported to modern web.",
   "main": "index.js",
   "scripts": {
@@ -49,9 +49,13 @@
         ]
       },
       {
-        "blockquote": [
-          "Amazing! That looks exactly my game!",
-          "I like how the high score table looks the same and even the black & white option is preserved. In those days, there were Windows computers that were in black & white! You might be interested to know that I wrote all the games in assembly language- my choice in those days over the usual C."
+        "p": [
+          {
+            "blockquote": "Amazing! That looks exactly my game!"
+          },
+          {
+            "blockquote": "I like how the high score table looks the same and even the black & white option is preserved. In those days, there were Windows computers that were in black & white! You might be interested to know that I wrote all the games in assembly language- my choice in those days over the usual C."
+          }
         ]
       },
       {
