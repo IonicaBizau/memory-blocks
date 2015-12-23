@@ -39,7 +39,7 @@ I asked him to tell me more about the game history. He said:
 
 ### :camel: High Scores, Big board, colored
 
-[![http://i.imgur.com/OymyC8A.png]()](https://ionicabizau.github.io/memory-blocks/)
+[![](http://i.imgur.com/OymyC8A.png)](https://ionicabizau.github.io/memory-blocks/)
 
 ### :tv: High Scores, Little board, greyscale
 
