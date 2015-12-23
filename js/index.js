@@ -258,11 +258,6 @@
         showHighscores();
     });
 
-    // View on GitHub
-    $(".view-on-github").on("click", function () {
-        window.location = "https://github.com/IonicaBizau/blocks";
-    });
-
     // Form submit
     $("form").on("submit", function (e) {
         var name = $nameInput.val()

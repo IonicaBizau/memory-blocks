@@ -385,12 +385,18 @@ span.time {
     text-align: center;
 }
 
+a.retro-border,
 button.retro-border {
     width: 150px;
     height: 30px;
     margin: 6px 20px;
     background: #F0F0F0;
     cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    color: inherit;
+    font-weight: normal;
+    vertical-align: middle;
 }
 
 .congrats {
@@ -526,4 +532,10 @@ select.retro-border {
     color: inherit;
     font-weight: initial;
     text-decoration: underline;
+}
+
+a.retro-border {
+    height: 23px;
+    padding-top: 3px;
+    width: 146px;
 }
