@@ -1,12 +1,16 @@
-# blocks-game [![Support this project][donate-now]][paypal-donations]
+# Memory Blocks [![Support this project][donate-now]][paypal-donations]
 
-The old BLOCKS memory game ported to modern web.
+The old Memory Blocks game (part of SYMANTEC GAME PACK) ported to modern web.
 
 ## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
 ## Thanks
 
+ - Lot of thnaks to [Charles Timmerman](http://funster.com/)–the
+    author of the original game, part of SYMANTEC GAME PACK for
+    Windows. He allowed me to use the images and designs in this
+    ame clone. :cake:
  - Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:
 
 ## License

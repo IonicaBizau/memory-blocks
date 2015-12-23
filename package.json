@@ -1,14 +1,14 @@
 {
-  "name": "blocks-game",
+  "name": "memory-blocks",
   "version": "1.0.0",
-  "description": "The old BLOCKS memory game ported to modern web.",
+  "description": "The old Memory Blocks game (part of SYMANTEC GAME PACK) ported to modern web.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IonicaBizau/blocks.git"
+    "url": "git+https://github.com/IonicaBizau/memory-blocks.git"
   },
   "keywords": [
     "old",
@@ -16,7 +16,8 @@
     "blocks",
     "html",
     "web",
-    "modern"
+    "modern",
+    "memory"
   ],
   "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
   "contributors": [
@@ -24,13 +25,20 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IonicaBizau/blocks/issues"
+    "url": "https://github.com/IonicaBizau/memory-blocks/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/blocks#readme",
+  "homepage": "https://github.com/IonicaBizau/memory-blocks#readme",
   "blah": {
+    "title": "Memory Blocks",
     "thanks": {
       "ul": [
-        "Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:"
+          [
+              "Lot of thnaks to [Charles Timmerman](http://funster.com/)–the",
+              "author of the original game, part of SYMANTEC GAME PACK for",
+              "Windows. He allowed me to use the images and designs in this",
+              "ame clone. :cake:"
+          ],
+          "Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:"
       ]
     }
   }
