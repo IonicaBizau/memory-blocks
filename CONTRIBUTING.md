@@ -59,6 +59,6 @@ Contributions are more than welcome!
 
 Thanks! :sweat_smile:
 
-[1]: https://github.com/IonicaBizau/blocks/issues
+[1]: https://github.com/IonicaBizau/memory-blocks/issues
 
 [2]: https://github.com/IonicaBizau/code-style
