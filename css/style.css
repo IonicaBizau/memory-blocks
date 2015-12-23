@@ -502,3 +502,6 @@ a.retro-border {
 .text-center {
     text-align: center;
 }
+body[game-skill=big] .game-controls .retro-border {
+    margin: 3px 2px;
+}
