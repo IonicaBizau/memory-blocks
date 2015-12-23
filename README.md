@@ -2,7 +2,7 @@
 
 # Memory Blocks [![Support this project][donate-now]][paypal-donations]
 
-The old Memory Blocks game (part of Symantec Game Pack) ported to modern web.
+The old Memory Blocks game (part of the Symantec Game Pack) ported to modern web.
 
 ## :memo: A Bit of History
 
@@ -51,7 +51,7 @@ Have an idea? Found a bug? See [how to contribute][contributing].
 ## Thanks
 
  - Lots of thanks to [Charles Timmerman](http://funster.com/)–the
-    author of the original game, part of Symantec Game Pack for
+    author of the original game, part of the Symantec Game Pack for
     Windows. He granted me permissions to use the game images and design in this
     clone. :cake:
  - Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:
