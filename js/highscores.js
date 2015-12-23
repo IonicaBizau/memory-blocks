@@ -25,8 +25,8 @@ var Highscores = {
           , fewestPairs: (ls.fewestPairs || []).sort(this._sort("pairs")).slice(0, 5)
         };
     }
-  , check: function (pairs, time) {
-        var s = this.get();
+  , check: function (pairs, time, skill) {
+        var s = this.get(skill);
         // 0 - no highscores
         // 1 - fastesttimes
         // 2 - fewestpairs
@@ -58,7 +58,7 @@ var Highscores = {
     }
   , insert: function (name, time, pairs, skill) {
         var s = this.get(skill)
-          , where = this.check(time, pairs)
+          , where = this.check(time, pairs, skill)
           , obj = this.obj(name, time, pairs)
           ;
 

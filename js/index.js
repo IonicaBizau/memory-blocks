@@ -30,14 +30,16 @@
             clearInterval(game.winInterval);
             $congrats.addClass("hide");
             $game.removeClass("bg-win-purple", "bg-win");
+            $time.html(0);
+            $pairsCount.html(0);
         }
 
         var gameSize = gameSkill === "little" ? {
-            x: 6
-          , y: 5
+            x: 1//6
+          , y: 2 //5
         } : {
-            x: 10
-          , y: 6
+            x: 2// 10
+          , y: 2// 6
         };
 
         game = new Match(".game", {
@@ -157,7 +159,7 @@
                     $game.toggleClass("bg-win-purple");
                 }, 500);
 
-                if (Highscores.check(pairs, time)) {
+                if (Highscores.check(pairs, time, gameSkill)) {
                     $enterName.removeClass("hide");
                     setTimeout(function() {
                         $nameInput.focus();
