@@ -286,6 +286,8 @@
         gameSkill = this.value;
         $body.attr("game-skill", gameSkill);
         $gameSkillType.text(gameSkill.charAt(0).toUpperCase() + gameSkill.substring(1));
-        newGame();
+        if (game) {
+            newGame();
+        }
     }).trigger("change");
 })();
