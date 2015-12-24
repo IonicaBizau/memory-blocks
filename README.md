@@ -6,7 +6,7 @@ The old Memory Blocks game (part of the Symantec Game Pack) ported to modern web
 
 ## :memo: A Bit of History
 
-2001 the year was when I first played a computer game. I was 6 year old.
+2001 was the year when I first played a computer game. I was 6 year old.
 It happened when we visited a friend in the neighboring village. I really enjoyed that game. That time there were just few people having computers.
 
 The game I played was **Memory Blocks**. It is part of the *Symantec Game Pack*, coded by Charles Timmerman–founder of [Funster](http://funster.com) and author of over 90 puzzle books.
