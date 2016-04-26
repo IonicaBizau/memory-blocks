@@ -1,8 +1,8 @@
 {
   "name": "memory-blocks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The old Memory Blocks game (part of the Symantec Game Pack) ported to modern web.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -107,5 +107,16 @@
         "Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:"
       ]
     }
-  }
+  },
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
 }
