@@ -1,3 +1,4 @@
+
 [![memory-blocks](http://i.imgur.com/m6ToUa4.png)](https://ionicabizau.github.io/memory-blocks/)
 
 # Memory Blocks [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![Version](https://img.shields.io/npm/v/memory-blocks.svg)](https://www.npmjs.com/package/memory-blocks) [![Downloads](https://img.shields.io/npm/dt/memory-blocks.svg)](https://www.npmjs.com/package/memory-blocks) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
@@ -17,9 +18,13 @@ In the meantime I became a web developer and finally decided to port this game t
 
 I contacted Charles Timmerman and showed him what I built. He was so happy to see his game alive on a modern platform:
 
+
 > Amazing! That looks exactly my game!
 
+
 > I like how the high score table looks the same and even the black & white option is preserved. In those days, there were Windows computers that were in black & white! You might be interested to know that I wrote all the games in assembly language- my choice in those days over the usual C.
+
+
 
 I asked him to tell me more about the game history. He said:
 
@@ -46,10 +51,11 @@ I asked him to tell me more about the game history. He said:
 
 [![](http://i.imgur.com/OydrO2v.png)](https://ionicabizau.github.io/memory-blocks/)
 
-## How to contribute
+
+## :yum: How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
-## Thanks
+## :cake: Thanks
 
  - Lots of thanks to [Charles Timmerman](http://funster.com/)–the
     author of the original game, part of the Symantec Game Pack for
@@ -57,7 +63,9 @@ Have an idea? Found a bug? See [how to contribute][contributing].
     clone. :cake:
  - Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:
 
-## License
+
+
+## :scroll: License
 
 [MIT][license] © [Ionică Bizău][website]
 
