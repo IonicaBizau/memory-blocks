@@ -1,6 +1,6 @@
 {
   "name": "memory-blocks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The old Memory Blocks game (part of the Symantec Game Pack) ported to modern web.",
   "main": "lib/index.js",
   "scripts": {
@@ -116,6 +116,7 @@
     "src/",
     "resources/",
     "menu/",
+    "scripts/",
     "cli.js",
     "index.js"
   ]
