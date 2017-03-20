@@ -1,6 +1,6 @@
 {
   "name": "memory-blocks",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "The old Memory Blocks game (part of the Symantec Game Pack) ported to modern web.",
   "main": "lib/index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "modern",
     "memory"
   ],
-  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
   "contributors": [
     "Antonija Šimić <antonija1023@gmail.com> (http://tonkec.github.io)"
   ],
@@ -112,12 +112,11 @@
     "bin/",
     "app/",
     "lib/",
-    "build/",
     "dist/",
     "src/",
+    "scripts/",
     "resources/",
     "menu/",
-    "scripts/",
     "cli.js",
     "index.js"
   ]
