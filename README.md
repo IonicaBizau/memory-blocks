@@ -10,7 +10,6 @@
 ## :memo: A Bit of History
 
 2001 was the year when I first played a computer game. I was 6 year old.
-
 It happened when we visited a friend in the neighboring village. I really enjoyed that game. That time there were just few people having computers.
 
 The game I played was **Memory Blocks**. It is part of the *Symantec Game Pack*, coded by Charles Timmerman–founder of [Funster](http://funster.com) and author of over 90 puzzle books.
@@ -25,9 +24,7 @@ I contacted Charles Timmerman and showed him what I built. He was so happy to se
 > Amazing! That looks exactly my game!
 
 
-
 > I like how the high score table looks the same and even the black & white option is preserved. In those days, there were Windows computers that were in black & white! You might be interested to know that I wrote all the games in assembly language- my choice in those days over the usual C.
-
 
 
 
@@ -85,6 +82,7 @@ Thanks! :heart:
     Windows. He granted me permissions to use the game images and design in this
     clone. :cake:
  - Big thanks to [Antonija Šimić (**@tonkec**)](https://github.com/tonkec) for implementing the 3D animations. :sparkles:
+
 
 
 ## :scroll: License
